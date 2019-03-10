@@ -1,16 +1,14 @@
-// api request example
-// $.ajax({
-//     url: 'https://randomuser.me/api/?format=xml',
-//     dataType: 'xml',
-//     success: function(data) {
-//       console.log(data);
-//     }
-//   });
-// esempio richiesta ajax con javascript 
-//creo l`oggetto
+class Card {
+    constructor(url) {
+        this.url = url;
+    }
+    generateCard() {
+        
+}
+
 let galleryContainer = document.querySelector('#gallery');
 let apiRequest  = () => {
- let xhr = new XMLHttpRequest();
+let xhr = new XMLHttpRequest();
     //creo la callback 
     xhr.onreadystatechange = function () {
         if(xhr.readyState === 4 && xhr.status === 200) {
@@ -39,24 +37,6 @@ let apiRequest  = () => {
     //mando la richiesta
     xhr.send();
 }
-
-for() {
-
-}
-
-apiRequest();
-apiRequest();
-apiRequest();
-apiRequest();
-apiRequest();
-apiRequest();
-apiRequest();
-apiRequest();
-apiRequest();
-apiRequest();
-
-//devi controllare che la stessa card non venga ripetuta piu volte
-//se clikki su una immagine si deve aprire un modale
 
 
 
