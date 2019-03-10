@@ -44,12 +44,12 @@ class Card {
                 $('#gallery').html(generatedHTML);
                 //quando la card viene cliccata
                 $('.card').on('click', function() {
-                    //alert('tutto bene');
-                    //fade in il modale
-                    $('#gallery').fadeIn(generatedModal);
+                    $('#gallery').append(generatedModal);
+                    $('modal-container').fadeOut();
                 });
           
-               
+
+                
                 
                 
                 //quando il bottone di chiusura viene cliccato
