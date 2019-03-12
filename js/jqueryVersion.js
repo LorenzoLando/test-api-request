@@ -1,13 +1,14 @@
 
 //classe costruita con jQuery
-
-
 class Card {
     constructor(url) {
         this.url = url;
         
     }
-    generateCard() {
+    
+    
+    
+callBack (response) {
         let callBack = (response) => {
                 let refinedData = response.results[0];
                 console.log(refinedData);
