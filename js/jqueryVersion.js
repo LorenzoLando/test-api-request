@@ -53,7 +53,7 @@ class Card {
         }
   }
 
-  let card = new Card(12);
+  let card = new Card(25);
   card.function();
 
 
